@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer survey form</title>
+   <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take sometime  to help us improve our services.</p>
+    <form id ="survey-form">
+      <fieldset>
+      <label id="name-label">
+        Name <input id="name" type="text" name="name" placeholder="Enter your Name" required />
+      </label>
+      <label id="email-label">Email <input id="email" type="email" name="email" placeholder="Enter your Email" required /></label>
+      <label id="number-label">Age <input id="number" type="number" name="age" placeholder="Age" min="3" max="100" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What is your current gamer status ?
+      <select id="dropdown" name="role">
+            <option value="">(select current Gaming role)</option>
+            <option value="1">Casual Gamer</option>
+            <option value="2">Free Time Gamer</option>
+            <option value="3">Full Time Gamer</option>
+            <option value="4">Weekend Gamer</option>
+            <option value="5">Other</option>
+          </select>
+          </label>
+      </fieldset>
+      <fieldset>
+        <label>Would you like a personal ID tag made?</label><br>
+        <label for="Yes"><input id="Yes" name="radio-group" type="radio" name="Yes" class="inline" checked value="yes" /> Yes</label>
+          <label for="No"><input id="No" name="radio-group" type="radio" name="No" class="inline" value="no" /> No</label>
+          <label for="Decide later"><input id="later"  name="radio-group" type="radio" name="later" class="inline" value="later" /> Decide later</label>
+      </fieldset>
+      <fieldset>
+      <label>Which games do you currently play?</label><br>
+      <label><input id="playing0" type="checkbox" class="inline" name="game" value=" "/> MOBA (Mobile legends)</label><br>
+      <label><input id="playing1" type="checkbox" name="game4" class="inline" value="2"/> COD (Call of duty)</label><br>
+      <label><input id="playing2" type="checkbox" name="game2" class="inline" value="2"/> The Finals</label><br>
+      <label><input id="playing3" type="checkbox" name="game3" class="inline" value="3"/> Helldivers</label><br>
+      <label><input id="playing4" type="checkbox" name="game4" class="inline" value="4"/> Alan Wake (1/2) </label><br>
+      </fieldset>
+      <fieldset>
+      <label for="comments">Any comments or suggestions? </label>
+      <textarea  id="comments" name="comments" rows="3" cols="40" placeholder="Enter your comments here...."></textarea>
+    </fieldset>
+    <button type="submit" id="submit" value="Submit"> Submit</button>
+    </form>
+</body>
+</html>
